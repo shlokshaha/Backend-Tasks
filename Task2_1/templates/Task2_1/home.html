@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Input form</title>
+</head>
+<body>
+    <a href="{% url 'page2' %}">Search For User By Email ID </a><br><br>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="phno">Phone No. : </label>
+        <input type="number" id="phno" name="phno"><br><br>
+        <label for="email">Email ID : </label>
+        <input type="email" id="email" name="email"><br><br>
+        <label>Gender : </label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female<br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

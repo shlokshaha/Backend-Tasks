@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conclusion</title>
+</head>
+<body>
+    {% if msg %}
+        <h2>{{msg}}</h2>
+    {% endif %}
+    {% for i in data %}
+        <p>First Name : {{ i.fname }}</p>
+        <p>Last Name : {{ i.lname }}</p>
+        <p>Phone No. : {{ i.phno }}</p>
+        <p>Email ID : {{ i.email }}</p>
+        <p>Gender : {{ i.gender }}</p><br>
+    {% endfor %}
+    <a href="{% url 'page2' %}">Enter Email Again</a><br><br>
+    <a href="{% url 'home' %}">Enter User Info</a>
+</body>
+</html>

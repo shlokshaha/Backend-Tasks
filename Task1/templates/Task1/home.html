@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% for i in list %}
+    <ul>
+        <li>{{ i }}</li>
+    </ul>
+    {% endfor %}
+
+    <form method="GET" action="case">
+        <label for="fname">Enter the starting point: </label>
+        <input type="number" id="fname" name="fno"><br><br>
+        <label for="lname">Enter the ending point: </label>
+        <input type="number" id="lname" name="lno"><br><br>
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
+    </form>
+</body>
+</html>
